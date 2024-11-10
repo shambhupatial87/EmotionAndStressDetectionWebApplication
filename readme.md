@@ -19,7 +19,7 @@ Follow these steps to set up the project:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/emotion-stress-detection.git
+   git clone https://github.com/shambhupatial87/EmotionAndStressDetectionWebApplication
    cd emotion-stress-detection
    ```
 
