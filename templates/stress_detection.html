@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EAEEF4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .video-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        #video-feed {
+            max-width: 100%;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stress Detection</h1>
+    <div class="video-container">
+        <img id="video-feed" src="{{ url_for('video_feed_stress') }}">
+    </div>
+    <div class="button-container">
+        <a href="{{ url_for('index') }}" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

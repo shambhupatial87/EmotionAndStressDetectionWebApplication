@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            --tw-bg-opacity: 1;
+            background-color: rgb(234 238 244 / var(--tw-bg-opacity));
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h1 {
+            color: #333;
+            font-weight: 600;
+            font-size: 2.5rem;
+        }
+        .main-container {
+            display: flex;
+            vertical-align: middle;
+            place-content: center;
+        }
+        .main-container2{
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            width: 1247px;
+            /* height: 400px; */
+            margin-top: 3.5rem/* 56px */;
+            margin-bottom: 3.5rem/* 56px */;
+            border-radius: 25px;
+            padding: 2.5rem;
+            place-content: center;
+            text-align: center;
+        }
+        .button-box{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            place-content: center;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            /* margin-top: 25px; */
+            border: none;
+            padding: 12px 24px;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 1.1rem;
+            outline: none;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:focus {
+            background-color: #0056b3;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for the box in the bottom right corner */
+        .madebymain {
+            display: flex;
+            vertical-align: middle;
+            place-content: end;
+            padding-left: 2rem/* 32px */;
+            padding-right: 2rem/* 32px */;
+            padding-top: 1.25rem/* 20px */;
+            padding-bottom: 1.25rem/* 20px */;
+        }
+        .madebysub{
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            width: auto;
+            height: auto;
+            border-radius: 15px;
+        }
+        .block{
+            display: flex;
+            flex-direction: column;
+            padding: 0.75rem/* 12px */;
+            vertical-align: middle;
+            place-content: center;
+        }
+        .textp{
+            --tw-text-opacity: 1;
+            color: rgb(12 69 132 / var(--tw-text-opacity));
+            font-size: 20px;
+            line-height: 1.5rem/* 24px */;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-container2">
+            <h1>Welcome to Emotion and Stress Detection</h1>
+            <p class="textp">Please select an option:</p>
+            <div class="button-box">
+                <a href="/emotion_classification" class="button">Emotion Classification</a>
+                <a href="/stress_detection" class="button">Stress Detection</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="madebymain">
+        <div class="madebysub">
+            <div class="block">
+                <p class="textp">Shambhavi Patial (201280)</p>
+                <p class="textp">Mritunjay Chaudhary (201481)</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
